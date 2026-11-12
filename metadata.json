@@ -1,0 +1,8 @@
+{
+  "name": "Circular Motion Projection, Phase & SHM Kinematics Studio",
+  "description": "Interactive 60 FPS physics studio demonstrating uniform circular motion orthogonal projection, initial phase & differential equation solutions, and rotating phasor kinematics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
