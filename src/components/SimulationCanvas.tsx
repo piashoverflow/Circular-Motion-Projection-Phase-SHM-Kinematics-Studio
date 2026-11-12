@@ -1149,27 +1149,6 @@ export const SimulationCanvas: React.FC<SimulationCanvasProps> = ({
         ctx.fillStyle = '#e11d48';
         ctx.fillText('— a (+180°)', plotStartX + 148, legendY);
       }
-
-      // Landmark Flash Callout Badge at bottom-center or top-right of canvas
-      if (kinematics.landmark) {
-        const badgeText =
-          kinematics.landmark === 'equilibrium'
-            ? t.canvas.equilibriumBadge
-            : kinematics.landmark === 'positiveExtreme'
-            ? t.canvas.posExtremeBadge
-            : t.canvas.negExtremeBadge;
-        const isEq = kinematics.landmark === 'equilibrium';
-        drawPillLabel(
-          ctx,
-          badgeText,
-          width * 0.5,
-          Math.min(height - 22, cy + maxRadiusPx + 42),
-          isEq ? '#ecfdf5' : '#fff1f2',
-          isEq ? '#34d399' : '#fda4af',
-          isEq ? '#065f46' : '#9f1239',
-          '700 12.5px "Hind Siliguri", "Plus Jakarta Sans", sans-serif'
-        );
-      }
     }
 
     // --- PRIMARY PARTICLE P₁ (GLOWING BLUE) ON TOP ---
